@@ -27,6 +27,7 @@ public class MainActivity extends ActionBarActivity {
 
     final int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);
     final int cacheSize = maxMemory / 8;
+
     LruCache<String, Bitmap> cachedImageFiles = new LruCache<String, Bitmap>(cacheSize) {
         @Override
         protected int sizeOf(String key, Bitmap value) {
