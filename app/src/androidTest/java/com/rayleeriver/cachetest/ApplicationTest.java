@@ -13,7 +13,8 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
         super(Application.class);
     }
 
-    public void testCacheTest() {
-        Assert.assertTrue(true);
+    public void testCacheTest_instantiation() {
+        MainActivity mainActivity = new MainActivity();
+        assertNotNull(mainActivity);
     }
 }
